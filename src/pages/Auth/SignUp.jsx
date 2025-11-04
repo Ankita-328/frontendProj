@@ -57,7 +57,7 @@ const SignUp = ({ setCurrentPage }) => {
       if (token) {
         localStorage.setItem("Token", token);
         updateUser(response.data);
-        toast.success("Account created successful!", { duration: 6000 });
+        toast.success("Account created successful!", { duration: 900 });
         setTimeout(() => {
           navigate("/dashboard");
         }, 500);
