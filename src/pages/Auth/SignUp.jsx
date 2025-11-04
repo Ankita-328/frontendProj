@@ -60,7 +60,7 @@ const SignUp = ({ setCurrentPage }) => {
         toast.success("Account created successful!", { duration: 6000 });
         setTimeout(() => {
           navigate("/dashboard");
-        }, 2000);
+        }, 500);
       }
     } catch (error) {
       if (error.response && error.response.data.message) {
