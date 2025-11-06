@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { UserContext } from '../../context/userContext';
 import toast from 'react-hot-toast'
+import avatar from '../../assets/avatar.jpg'
 
 const ProfileInfoCard = () => {
     const { user, clearUser } = useContext(UserContext);
@@ -18,7 +19,7 @@ const ProfileInfoCard = () => {
         user && (
         <div className="flex items-center">
             <img
-                src={user.profileImageUrl  || "/default-avatar.png"}
+                src={user.profileImageUrl  || avatar}
                 alt="Profile"
                 className="w-10 h-10 bg-gray-300 rounded-full mr-3"
             />
